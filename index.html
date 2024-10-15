@@ -50,79 +50,67 @@
         </div>
       </div>
     </section>
-
+    
     <!-- 자기 소개 -->
-
+    
     <section class="section03">
       <div class="skill">
-        <p class="desc">My Skill</p>
-        <ul>
-          <li>
-            <a href="#"><img src="./images/folder_1.png" alt=""></a>
-            <p>HTML</p>
-            <span class="line line-top"></span>
-            <span class="line line-right"></span>
-            <span class="line line-bottom"></span>
-            <span class="line line-left"></span>
-          </li>
-          <li>
-            <a href="#"><img src="./images/folder_2.png" alt=""></a>
-            <p>CSS</p>
-            <span class="line line-top"></span>
-            <span class="line line-right"></span>
-            <span class="line line-bottom"></span>
-            <span class="line line-left"></span>
-          </li>
-          <li>
-            <a href="#"><img src="./images/folder_3.png" alt=""></a>
-            <p>JavaScript</p>
-            <span class="line line-top"></span>
-            <span class="line line-right"></span>
-            <span class="line line-bottom"></span>
-            <span class="line line-left"></span>
-          </li>
-          <li>
-            <a href="#"><img src="./images/ps_image.png" alt=""></a>
-            <p>PhotoShop</p>
-            <span class="line line-top"></span>
-            <span class="line line-right"></span>
-            <span class="line line-bottom"></span>
-            <span class="line line-left"></span>
-          </li>
-          <li>
-            <a href="#"><img src="./images/ai_image.png" alt=""></a>
-            <p>Illustrator</p>
-            <span class="line line-top"></span>
-            <span class="line line-right"></span>
-            <span class="line line-bottom"></span>
-            <span class="line line-left"></span>
-          </li>
-          <li>
-            <a href="#"><img src="./images/figma.png" alt=""></a>
-           <p>Figma</p>
-           <span class="line line-top"></span>
-           <span class="line line-right"></span>
-           <span class="line line-bottom"></span>
-           <span class="line line-left"></span>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="section04">
-      <div class="section_con">
-        <div class="bg"></div>
-        <div class="section_left">
-          <img src="./images/face.jpeg" alt="내 사진">
+        <p class="desc">My information</p>
+        <div class="section_con">
+            <p><img src="./images/face.jpeg" alt="내 사진"></p>
+            <p><img src="./images/Group 10.png" alt=""></p>
         </div>
-        <div class="section_right">
-          <ul>
-            <li>이름 : 이현아</li>
-            <li>생년월일 : 2001.08.21</li>
-            <li>학력 : 대전대성여자고등학교 졸업</li>
-            <li>경력 : 대전신세계백화점</li>
+          <ul class="cord">
+            <li>
+              <a href="#"><img src="./images/folder_1.png" alt=""></a>
+              <p>HTML</p>
+              <span class="line line-top"></span>
+              <span class="line line-right"></span>
+              <span class="line line-bottom"></span>
+              <span class="line line-left"></span>
+            </li>
+            <li>
+              <a href="#"><img src="./images/folder_2.png" alt=""></a>
+              <p>CSS</p>
+              <span class="line line-top"></span>
+              <span class="line line-right"></span>
+              <span class="line line-bottom"></span>
+              <span class="line line-left"></span>
+            </li>
+            <li>
+              <a href="#"><img src="./images/folder_3.png" alt=""></a>
+              <p>JavaScript</p>
+              <span class="line line-top"></span>
+              <span class="line line-right"></span>
+              <span class="line line-bottom"></span>
+              <span class="line line-left"></span>
+            </li>
+            <li>
+              <a href="#"><img src="./images/ps_image.png" alt=""></a>
+              <p>PhotoShop</p>
+              <span class="line line-top"></span>
+              <span class="line line-right"></span>
+              <span class="line line-bottom"></span>
+              <span class="line line-left"></span>
+            </li>
+            <li>
+              <a href="#"><img src="./images/ai_image.png" alt=""></a>
+              <p>Illustrator</p>
+              <span class="line line-top"></span>
+              <span class="line line-right"></span>
+              <span class="line line-bottom"></span>
+              <span class="line line-left"></span>
+            </li>
+            <li>
+              <a href="#"><img src="./images/figma.png" alt=""></a>
+             <p>Figma</p>
+             <span class="line line-top"></span>
+             <span class="line line-right"></span>
+             <span class="line line-bottom"></span>
+             <span class="line line-left"></span>
+            </li>
           </ul>
         </div>
-      </div>
     </section>
   </div>
 
@@ -174,8 +162,8 @@
     const ani2 = gsap.timeline({
       defaults:{autoAlpha:0,}
     });
-    ani2.from(".section03 ul li",{
-      y:-200,
+    ani2.from(".section03",{
+      y:-50,
     })
     ScrollTrigger.create({
       animation:ani2,
