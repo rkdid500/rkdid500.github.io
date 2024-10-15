@@ -1,3 +1,6 @@
+  
+  //클릭이벤트 제이쿼리
+  
   $(function(){
     $(".nav").css("display","none");
     let bool = true;
