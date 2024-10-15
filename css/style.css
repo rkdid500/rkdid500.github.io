@@ -25,11 +25,11 @@ span{display: inline-block;}
 .section02 .line .bar{position: absolute;width: 100%; height: 150px; left: 0;top: 0;display: block;background-color: #0057ff;}
 .section02 .section_content{width: 100%; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;gap:250px;align-items: center;}
 .section02 .section_content .link img{width: 100%; display: block; border-radius: 24px; transform: translateY(0) scale(1); opacity: 1; transition: 2s;}
-.section02 .section_content .txt{color: #fff; text-align: center; border: 1px solid #ccc; border-radius: 24px; padding: 100px;}
+.section02 .section_content .txt{color: #fff; text-align: center; border-radius: 24px; padding: 100px;}
 .section02 .section_content .txt p{margin: 10px 0;}
-.section02 .section_content .txt p:nth-child(1){font-size: 80px;}
-.section02 .section_content .txt p:nth-child(2){font-size: 40px;}
-.section02 .section_content .txt p:nth-child(3){font-size: 25px;}
+.section02 .section_content .txt p:nth-child(1){font-size: 120px;}
+.section02 .section_content .txt p:nth-child(2){font-size: 60px;}
+.section02 .section_content .txt p:nth-child(3){font-size: 30px;}
 .section02 .section_content .txt span{font-size: 15px;}
 
 
@@ -49,7 +49,13 @@ span{display: inline-block;}
 .section03 .skill ul li:hover .line-top,.section03 .skill ul li:hover .line-bottom{transform: scaleX(1);transition: all 0.3s linear;}
 .section03 .skill ul li:hover .line-right,.section03 .skill ul li:hover .line-left{transform: scaleY(1);transition: all 0.3s linear;}
 
+.section03 .skill ul li:nth-child(1):hover{background-color: #FB7568; transition: 0.5s;}
+.section03 .skill ul li:nth-child(2):hover{background-color: #69B6F5; transition: 0.5s;}
+.section03 .skill ul li:nth-child(3):hover{background-color: #EDF171; transition: 0.5s;}
+.section03 .skill ul li:nth-child(4):hover{background-color: #3E67B2; transition: 0.5s;}
+.section03 .skill ul li:nth-child(5):hover{background-color: #E2AA40; transition: 0.5s;}
+.section03 .skill ul li:nth-child(6):hover{background-color: #652A79; transition: 0.5s;}
+
 
 
 .section04{width: 100%; min-height: 100vh;}
-.section04 p{color: #fff;}
