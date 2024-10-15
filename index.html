@@ -146,50 +146,43 @@
   <script src="https://unpkg.com/split-type"></script>
 
   <script>
-  document.querySelectorAll(".split").forEach(text => {
-    let theText = text.innerText;
-    let newText = "";
-    let line = ".bar";
+    document.querySelectorAll(".split").forEach(text => {
+  let theText = text.innerText;
+  let newText = "";
+  let line = ".bar";
 
-    for(let i=0; i<text.innerText.length; i++){
-        newText += "<span aria-hidden='true'>";
-        if (text.innerText[i] == " "){
-            newText += " "
-        } else {
-            newText += text.innerText[i];
-        }
-        newText += "</span>";
-    }
-    text.innerHTML = newText;
-    text.setAttribute("aria-label", theText);
-  });
-      gsap.from(".split span",{
-        y:100,
-        autoAlpha:0,
-        duration:3,
-        scrub:true,
-        ease: "circ.out",
-        stagger:{
-          amount:1,
-          from:"random"
-        }
-      });
+  for(let i=0; i<text.innerText.length; i++){
+      newText += "<span aria-hidden='true'>";
+      if (text.innerText[i] == " "){
+          newText += " "
+      } else {
+          newText += text.innerText[i];
+      }
+      newText += "</span>";
+  }
+  text.innerHTML = newText;
+  text.setAttribute("aria-label", theText);
+});
+    gsap.from(".split span",{
+      y:100,
+      autoAlpha:0,
+      duration:3,
+      scrub:true,
+      ease: "circ.out",
+      stagger:{
+        amount:1,
+        from:"random"
+      }
+    });
 
-<<<<<<< HEAD
-    // const ani2 = gsap.timeline({
-    //   defaults:{autoAlpha:0,}
-    // });
-    // ani2.to(".section03 ul",{
-      //   y:-100,
-      // })
-      const ani2 = gsap.timeline();
-    ScrollTrigger.create({
-      animation:ani2,
-      trigger:".section03",
-      markers:true,
-      start:"top top", 
-      end:"+=1000",
-=======
+    // const ani2 = gsap.timeline();
+    // ScrollTrigger.create({
+    //   animation:ani2,
+    //   trigger:".section03",
+    //   start:"top top",
+    //   end:"+=1000",
+
+    // })
     const ani2 = gsap.timeline({
       defaults:{autoAlpha:0,}
     });
@@ -202,33 +195,30 @@
       //markers:true, 
       start:"top top", 
       // end:"+=2000",
->>>>>>> bc2929715a54eb48bbef15a1a28328187b29c7ca
       pin:true,
       scrub:true,
       id:"box1",
       anticipatePin:1,
     });
 
+    gsap.utils.toArray(".section_content").forEach((item) => {
+      ScrollTrigger.create({
+          trigger: item,
+          start: "top 30%",
+          end: "bottom 70%",
+          scrub:true,
+          onEnter: () => {animate(item)}, 
+      });
+  
+      item.style.opacity = "0";
+  });
 
-      gsap.utils.toArray(".section_content").forEach((item) => {
-    ScrollTrigger.create({
-        trigger: item,
-        start: "top 30%",
-        end: "bottom 70%",
-        scrub:true,
-        onEnter: () => {animate(item)}, 
-    });
-
-    item.style.opacity = "0";
-});
-
-const animate = (item) => {
+  const animate = (item) => {
     gsap.fromTo(item, 
         {autoAlpha: 0, x: 0, y: 0 ,scale:0}, 
         {autoAlpha: 1, x: 0, y: 100, duration: 2, overwrite: "auto", ease: "expo",scale:0.8}
     )
 }
-
 
 const lenis = new Lenis();
 
@@ -241,8 +231,6 @@ function raf(time) {
     requestAnimationFrame(raf);
 }
 requestAnimationFrame(raf);
-
-
   </script>
 </body>
 </html>
