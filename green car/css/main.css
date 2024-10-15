@@ -1,0 +1,183 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+.section01 {
+  height: 100vh;
+}
+
+@keyframes textAni {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.main #page .section02 {
+  background: url(https://www.greencar.co.kr/static/media/bg_section02_01.95b2814a9477511bd716.png)
+    no-repeat left 85px;
+  min-height: 100vh;
+  position: relative;
+  border: 1px solid;
+}
+.main #page .section02 .slide-area {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1524px;
+}
+.main #page .section02 .slide-area .slide-txt {
+  position: relative;
+  width: 355px;
+}
+.main #page .section02 .slide-area .slide-txt .item {
+  margin-top: 244px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.main #page .section02 .slide-area .slide-txt .item.active {
+  opacity: 1;
+}
+.main #page .section02 .slide-area .slide-txt .item .title {
+  color: #00a870;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 68px;
+  overflow: hidden;
+}
+.main #page .section02 .slide-area .slide-txt .item .title .ani {
+  transform: translateY(100%);
+}
+.main #page .section02 .slide-area .slide-txt .item .desc {
+  color: #3c536f;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+.main #page .section02 .slide-area .slide-txt .item .desc .ani {
+  transform: translateY(100%);
+}
+.main #page .section02 .slide-area .slide-txt .ani {
+  display: block;
+  opacity: 0;
+}
+.main #page .section02 .slide-area .slide-txt .active .ani {
+  animation: textAni 1s ease both;
+}
+.main #page .section02 .slide-area .slide-txt .active .desc .ani {
+  animation-delay: 0.4s;
+}
+.main #page .section02 .slide-area .slide-txt .indicator {
+  left: 0;
+  position: absolute;
+  top: 170px;
+}
+.main #page .section02 .slide-area .slide-txt .indicator .indi-item {
+  background: url(https://www.greencar.co.kr/static/media/icon_indicator_off.5c94f2369d68d200d313.svg)
+    no-repeat;
+  display: inline-block;
+  height: 7.63px;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  vertical-align: middle;
+  width: 8px;
+  text-indent: -9999px;
+}
+.main
+  #page
+  .section02
+  .slide-area
+  .slide-txt
+  .indicator
+  .indi-item:not(:first-child) {
+  margin-left: 15px;
+}
+.main #page .section02 .slide-area .slide-txt .indicator .indi-item.active {
+  background: url(https://www.greencar.co.kr/static/media/icon_indicator_on.3b875c67e810f64e85c4.svg)
+    no-repeat;
+  height: 14.3px;
+  width: 35px;
+}
+.main #page .section02 .slide-area .swiper1 {
+  height: 700px;
+  margin: 0;
+  overflow: visible;
+  position: relative;
+  width: 1042px;
+}
+.main #page .section03 {
+  min-height: 100vh;
+  position: relative;
+}
+.main #page .section03 .slide-area {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1524px;
+}
+.main #page .section03 .slide-area .slide-txt {
+  position: relative;
+  width: 490px;
+}
+.main #page .section03 .slide-area .slide-img {
+  display: flex;
+  flex-shrink: 0;
+}
+.main #page .section03 .slide-area .slide-img .scene {
+  flex: none;
+  flex-shrink: 0;
+}
+.main #page .section03 .slide-area .slide-img .scene.on {
+  opacity: 0.5;
+}
+.main #page .section03 .group {
+  left: 100px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+}
+.main #page .section03 .group.active {
+  opacity: 0;
+  left: 0;
+}
+.main #page .section03 .txt {
+  margin-right: 79px;
+  position: relative;
+  width: 418px;
+  z-index: 5;
+}
+.main #page .section03 .title {
+  color: #0a3c5c;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 58.8px;
+}
+.main #page .section03 .desc {
+  color: #00a870;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-top: 17px;
+}
+.main #page .section03 .scene {
+  flex: 1 1;
+}
+.main #page .section03 .scene :not(tl1) {
+  margin-left: 120px;
+}

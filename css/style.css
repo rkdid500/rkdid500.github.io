@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;}
+body{box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; display: inline-block;}
+span{display: inline-block;}
+
+#wrap{margin: 0 auto; width: 100%;background-color: #000; background-image: url(../images/star-4773.gif);}
+
+.section01{width: 100%; min-height: 100vh;}
+.section01 .section_inner{height: 100vh; display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.section01 .section_inner .text{text-align: center; font-size: 100px; color: #fff;}
+.section01 .section_inner .text p{margin-bottom: 20px;}
+.section01 .section_inner .text p:first-child{font-weight: bold;}
+.section01 .section_inner .text p:last-child{font-size: 50px;}
+
+/* .section01,.section02{} */
+
+
+
+
+.section02{width: 100%; height: 100%;position: relative;}
+.section02 .line{position: absolute;left: 50%;transform: translateX(-50%); width: 2px; height: 100%; background-color: rgba(255,255,255,0.2); z-index: 999;}
+.section02 .line .bar{position: absolute;width: 100%; height: 150px; left: 0;top: 0;display: block;background-color: #0057ff;}
+.section02 .section_content{width: 100%; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;gap:250px;align-items: center;}
+.section02 .section_content .link img{width: 100%; display: block; border-radius: 24px; transform: translateY(0) scale(1); opacity: 1; transition: 2s;}
+.section02 .section_content .txt{color: #fff; text-align: center; border: 1px solid #ccc; border-radius: 24px; padding: 100px;}
+.section02 .section_content .txt p{margin: 10px 0;}
+.section02 .section_content .txt p:nth-child(1){font-size: 80px;}
+.section02 .section_content .txt p:nth-child(2){font-size: 40px;}
+.section02 .section_content .txt p:nth-child(3){font-size: 25px;}
+.section02 .section_content .txt span{font-size: 15px;}
+
+
+
+.section03{max-width: 1600px; width: 100%; min-height: 100vh; margin: 0 auto;}
+.section03 .skill .desc{font-size: 60px; color: #fff; text-align: center; font-weight: bold;}
+.section03 .skill ul{display: flex; justify-content: center; flex-wrap: wrap; gap: 50px; width: 100%; height: 616px; margin-top: 100px;}
+.section03 .skill ul li{display: flex; flex-direction: column; justify-content: center; align-items: center; width: 366px;height: 282px; background-color: #0f0f0f; border-radius: 20px; text-align: center;}
+.section03 .skill ul li span{display: block; font-size: 30px; color: #fff; margin-top: 20px;}
+.section03 .skill ul li img{width: 80px;height: 80px; object-fit: cover;}
+
+
+
+.section04{width: 100%; min-height: 100vh;}
+.section04 p{color: #fff;}
