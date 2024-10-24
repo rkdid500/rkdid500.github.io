@@ -34,6 +34,7 @@ main{width: 1789px; padding: 0 54px 50px; margin: 120px auto; }
 .swiper {
   width: 100%;
   height: 420px;
+  position: relative;
 }
 .swiper-slide {
   text-align: center;
@@ -49,6 +50,11 @@ main{width: 1789px; padding: 0 54px 50px; margin: 120px auto; }
   object-fit: cover;
 }
 .swiper-button-next,.swiper-button-prev{color: #fff;}
+
+.slidetxt{position: absolute;left: 50%;top: 50%; transform: translate(-50%,-50%); width: 90%;z-index: 2; color: #fff; text-align: center;}
+.slidetxt p:first-child{font-size: 54px; font-weight: 600;}
+.slidetxt p:last-child{font-size: 106px; font-weight: bold;}
+
 
 /* content 01 */
 .con1{width: 100%; margin: 20px auto; display: grid;grid-template-columns: 1fr 2fr 1fr; gap: 20px; justify-content: center; align-items: center;}
