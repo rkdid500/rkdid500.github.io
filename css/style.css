@@ -25,6 +25,7 @@ span{display: inline-block;}
 .section02 .section_content{width: 100%; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;gap:250px;align-items: center;}
 .section02 .section_content .link img{width: 100%; display: block; border-radius: 24px; transform: translateY(0) scale(1); opacity: 1; transition: 2s;}
 .section02 .section_content .txt{color: #fff; text-align: center; border-radius: 24px; padding: 100px;}
+.section02 .section_content .txt a{color: #fff;}
 .section02 .section_content .txt p{margin: 10px 0;}
 .section02 .section_content .txt p:nth-child(1){font-size: 120px;}
 .section02 .section_content .txt p:nth-child(2){font-size: 60px;}
