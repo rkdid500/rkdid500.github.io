@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0; box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none; color: #fff; display: inline-block; text-align: center;}
+p{color: #fff;}
+/* img{vertical-align: middle;} */
+
+@import url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+	src: url('/Wellysis/font/Pretendard-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url('/Wellysis/font/Pretendard-Bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: url('/Wellysis/font/Pretendard-SemiBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url('/Wellysis/font/Pretendard-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('/Wellysis/font/Pretendard-Regular.woff2') format('woff2');}
+
+body{font-family: 'Pretendard', sans-serif;font-size:16px;font-weight:400;font-style: normal;text-decoration: none;color: #fff;overflow-x:hidden;position:relative;background-color: #000;}
+
+
+#wrap{max-width: 1920px; width: 100%; margin: 0 auto;}
+
+/* header */
+
+.head{width: 100%; height: 120px;background-color: #000; display: flex; justify-content: space-between; align-items: center;}
+.head .head_left img{width: 160px; height: 50px; padding-left: 3rem;}
+.head .head_mid ul{display: flex;}
+.head .head_mid ul li{padding: 0 35px; font-size: 18px; }
+.head .head_mid ul li:hover > a{color: #8181ff;transition: 0.3s;}
+.head .head_mid ul li span{border: 2px solid #4a3ab2; border-radius: 22px; transition: 0.3s; padding: 10px 25px; cursor: pointer;}
+
+/* 서브메뉴 */
+.head .head_mid .mid_sub{display: none; left: 0;top: 0; width: 100%;height: 180px;}
+/* .head .head_mid ul li:hover > .mid_sub{display: block;left: 0;top: 0; width: 100%;height: 180px; background-color: #ccc;color: #fff;} */
+
+
+.head .head_right .right{display: flex;padding-right: 3rem;}
+.head .head_right .right li{padding: 10px; font-size: 18px; position: relative;}
+/* .head .head_right .right li:last-child::after{content: ""; width: 1px; height: 12px;background-color: #777;position: absolute; left: 50%; top: 50%;transform: translate(-50%,-50%);} */
+.head .head_right .right li:last-child a{color: #777;}
+
+/* main */
+main{max-width: 1920px; width: 100%; margin: 0 auto;}
+
+.video{width: 100%;height: 100vh; position: relative;}
+.video video{width: 100%;}
+.video .text{position: absolute;left: 50%;top: 70%; transform: translate(-50%,-70%); text-align: center;}
+.video .text p:nth-child(1){font-size: 54px; font-weight: 600;}
+.video .text p:nth-child(2){font-size: 32px; margin-top: 23px;}
+.video .text > a{width: 200px; height: 53px; line-height: 50px; border: 2px solid #999; border-radius: 26px; margin-top: 35px; font-weight: 500; transition: 0.5s;}
+.video .text > a:hover{color: #000;background-color: #fff; border-color: #fff;transition: 0.5s;}
+
+.con1{max-width: 1420px; width: 80%; height: 100vh; padding: 100px 0 250px; margin: 0 auto;}
+.con1 .con1_inner .text{text-align: left;}
+.con1 .con1_inner .text p:nth-child(1){font-size: 48px; font-weight: bold; margin-top: 10px;}
+.con1 .con1_inner .text p:nth-child(2){margin-top: 20px; font-size: 22px; color: #7478f6; font-weight: bold;}
+
+.con1 .con1_count{display: flex; margin-top: 120px;}
+.con1 .con1_count li{padding: 0px,0px,0px,40px;}
+
+
+
+
+
+
+/* .con2{width: 100%; height: 100vh;} */
