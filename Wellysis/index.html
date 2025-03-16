@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/Pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
 </head>
 <body>
@@ -245,72 +247,74 @@
                         <span>News</span>
                         <p>새로운 소식</p>
                     </div>
-                    <ul class="swiper">
-                        <li>
+                    <div class="swiper mySwiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide con4_slide">
                             <img src="./images/thumb01.jpg" alt="img">
                             <div class="swiper_text">
-                                <span>보도자료</span>
+                                <span class="news">보도자료</span>
                                 <p>웰리시스, 심전도기 '에스패치' 미국 인도 진출 본격화</p>
-                                <span>2024-01-16</span>
+                                <span class="date">2024-01-16</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide con4_slide">
                             <img src="./images/thumb02.jpg" alt="img">
                             <div class="swiper_text">
-                                <span>보도자료</span>
+                                <span class="news">보도자료</span>
                                 <p>삼진제약, 디지털헬스케어 스타트업 '웰리시스'와 협력</p>
-                                <span>2020-10-20</span>
+                                <span class="date">2020-10-20</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide con4_slide">
                             <img src="./images/thumb03.jpg" alt="img">
                             <div class="swiper_text">
-                                <span>보도자료</span>
+                                <span class="news">보도자료</span>
                                 <p>웰리시스, 삼성전자와 차세대 '에스패치' 공동 개발한다</p>
-                                <span>2023-11-15</span>
+                                <span class="date">2023-11-15</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide con4_slide">
                             <img src="./images/thumb04.jpg" alt="img">
                             <div class="swiper_text">
-                                <span>보도자료</span>
+                                <span class="news">보도자료</span>
                                 <p>웰리시스, 강북삼성병원.삼성전자와 사업장 뇌혈관질환 예방 프로그램</p>
-                                <span>2023-10-20</span>
+                                <span class="date">2023-10-20</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide con4_slide">
                             <img src="./images/thumb05.jpg" alt="img">
                             <div class="swiper_text">
-                                <span>보도자료</span>
+                                <span class="news">보도자료</span>
                                 <p>웰리시스 "패치형 심전도계 '에스패치',美 FDA 승인"</p>
-                                <span>2023-09-05</span>
+                                <span class="date">2023-09-05</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide con4_slide">
                             <img src="./images/thumb06.jpg" alt="img">
                             <div class="swiper_text">
-                                <span>보도자료</span>
+                                <span class="news">보도자료</span>
                                 <p>웰리시스, KIMES서 웨어러블 심전도 '에스패치' 출품</p>
-                                <span>2023-03-22</span>
+                                <span class="date">2023-03-22</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide con4_slide">
                             <img src="./images/thumb07.jpg" alt="img">
                             <div class="swiper_text">
-                                <span>보도자료</span>
+                                <span class="news">보도자료</span>
                                 <p>(삼성이 키운 스타트업2)웰리시스, 인력충원.투자유치 가속</p>
-                                <span>2022-08-03</span>
+                                <span class="date">2022-08-03</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide con4_slide">
                             <img src="./images/thumb08.jpg" alt="img">
                             <div class="swiper_text">
-                                <span>보도자료</span>
+                                <span class="">보도자료</span>
                                 <p>엑세스바이오, 심전도 전문기업 웰리시스에 투자...디지털헬스케...</p>
-                                <span>2022-05-30</span>
+                                <span class="date">2022-05-30</span>
                             </div>
                         </li>
                     </ul>
+                </div>
                 </div>
             </section>
         </main>
@@ -358,5 +362,60 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+//         	    var swiper = new Swiper(".mySwiper", {
+// 		slidesPerView: 3.2,
+// 		loop: true,
+// 		autoHeight : true,
+// 		spaceBetween: 30,
+//   		autoplay: {
+// 		delay: 2500, // 시간 설정          
+// 		disableOnInteraction: false,},
+// 	    breakpoints: {	
+// 			0: {
+//             slidesPerView: 1.1,  //브라우저가 768보다 클 때
+// 			spaceBetween: 15,
+// 			},
+
+//           768: {
+//             slidesPerView: 3.2,  //브라우저가 768보다 클 때
+//             spaceBetween: 30,
+//           },
+//         },
+//     });
+
+            var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+    //   slidesPerGroup: 1,
+      spaceBetween: 30,
+      autoHeight : true,
+      centeredSlides: false,
+      loop:true,
+      autoplay: {
+        delay : 6000,
+        disableOnInteraction: false,
+    },
+    speed:500,
+    });
+
+
+    //         var swiper = new Swiper(".mySwiper", {
+    //   spaceBetween: 30,
+    //   centeredSlides: true,
+    //   autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    // });
+    </script>
 </body>
 </html>
