@@ -5,7 +5,7 @@ ul{list-style: none;}
 a{text-decoration: none; color: #fff; display: inline-block; text-align: center;}
 p{color: #fff; font-weight: 600;}
 /* span{font-weight: 600;} */
-img{max-width: 100%;}
+img{max-width: 100%; display: block; vertical-align: middle;}
 /* h1,h2,h3,h4,h5,h6{font-size: 1em;} */
 
 
@@ -101,8 +101,8 @@ main{max-width: 1920px; width: 100%; margin: 0 auto;}
 .con1 .con1_count li{padding: 0px,0px,0px,40px;}
 .con1 .con1_count li > img{width: 40%;}
 .con1 .con1_count li .con1_desc{margin-top: 85px;}
-.con1 .con1_count li .con1_desc > span{font-size: 28px;}
-.con1 .con1_count li .con1_desc > p{margin-top: 25px; font-size: 18px;}
+.con1 .con1_count li .con1_desc > span{font-size: 28px; font-weight: 700;}
+.con1 .con1_count li .con1_desc > p{margin-top: 25px; font-size: 18px; font-weight: 500;}
 .con1 .con1_count li .con1_desc > p:last-child{margin-top: 5px;}
 
 
@@ -132,13 +132,21 @@ main{max-width: 1920px; width: 100%; margin: 0 auto;}
 .con3_text span,.con4_text span{border: 1px solid #999; border-radius: 18px; padding: 5px 24px;}
 .con3_text p,.con4_text p{font-size: 48px; margin-top: 30px;}
 
+.con3 .scroll{margin-top: 80px; position: relative;}
+.con3 .scroll .scrolling{display: flex; animation: scrolling 30s linear infinite;}
+.con3 .scrolling li{position: relative;display: flex; flex-shrink:0; justify-content: center; align-items: center;margin: 0 40px;} 
+
+@keyframes scrolling {
+	0% { transform: translateX(0);
+	}
+	100% {transform: translateX(-100%);
+	}
+	}
+
 
 
 
 /* con4 */
-
-
-
 
 
 /* footer */
