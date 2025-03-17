@@ -7,47 +7,6 @@ p{color: #fff; font-weight: 600;}
 img{max-width: 100%; display: block; vertical-align: middle;}
 
 
-
-
-/* :lang(en){font-family: 'Poppins',sans-serif;}
-:lang(ko){font-family: 'Pretendard', sans-serif;} */
-
-/* @import url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 800;
-	font-style: normal;
-	font-display: swap;
-	src: url('/Wellysis/font/Pretendard-ExtraBold.woff2') format('woff2');
-}
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-	src: url('/Wellysis/font/Pretendard-Bold.woff2') format('woff2');
-}
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-	src: url('/Wellysis/font/Pretendard-SemiBold.woff2') format('woff2');
-}
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-	src: url('/Wellysis/font/Pretendard-Medium.woff2') format('woff2');
-}
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-	src: url('/Wellysis/font/Pretendard-Regular.woff2') format('woff2');} */
-
 body{font-family: 'Poppins', 'Pretendard', sans-serif;font-size:16px;font-style: normal;text-decoration: none;color: #fff;overflow-x:hidden;position:relative;background-color: #000;}
 
 
