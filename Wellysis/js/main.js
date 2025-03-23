@@ -31,3 +31,6 @@ var swiper = new Swiper(".mySwiper", {
   },
   speed:500,
   });
+
+
+  document.querySelector(".nav").style.removeProperty("display");
