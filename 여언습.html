@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 기본 숨김 설정 */
+.lang-btn, .nav-btn, .nav-menu {
+  display: none;
+}
+
+/* 반응형: 1024px 이하에서 보이도록 설정 */
+@media screen and (max-width: 1024px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: black;
+  }
+
+  .lang-btn, .nav-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  .lang-btn {
+    gap: 5px;
+    padding: 8px 12px;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .nav-btn {
+    width: 30px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* 메뉴 스타일 */
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-menu ul li {
+    padding: 10px;
+  }
+
+  .nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.rotate-down {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.rotate-up {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <button class="lang-btn">
+          KR <span class="arrow">▼</span>
+        </button>
+        <button class="nav-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+      
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- jQuery 라이브러리 추가 (필수!) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script>
+        $(document).ready(function () {
+  $(".nav-btn").click(function () {
+    $(".nav-menu").slideToggle(); // 메뉴 열고 닫기
+    $(".nav-btn span:nth-child(1)").toggleClass("rotate-down");
+    $(".nav-btn span:nth-child(3)").toggleClass("rotate-up");
+  });
+});
+
+      </script>
+</body>
+</html>
