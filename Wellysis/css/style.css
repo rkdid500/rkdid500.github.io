@@ -41,6 +41,7 @@ header{height: 120px; position: fixed; width: 100%; top:0; left: 0; z-index: 99;
 .nav_box .lang_box .lang_btn i{margin-left: 5px;}
 .nav_box .lang_box ul{display: none; width: 50px;height: 84px;position: absolute; left: 0; top: calc(100% + 15px); background-color: #f9f9f9;text-align: center; border-radius: 10px; transition: all 0.3s linear;}
 /* .nav_box .lang_box ul li{} */
+/* 호버 했을때 transition 속성 넣는거 부터터 */
 
 
 .nav_box .lang_box:hover ul{display: block; transition: all 0.3s linear;}
