@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>이현아의Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
   <div id="wrap">
@@ -18,7 +19,7 @@
       </div>
     </section>
 
-    <!-- 클론 페이지 소개 -->
+    <!-- 퍼블리싱싱 페이지 소개 -->
 
     <section class="section02">
       <div class="line">
@@ -70,10 +71,25 @@
         </div>
       </div>
     </section>
-    
+
+
+    <!-- 디자인 작업 소개 -->
+     <section class="section03">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">디자인1</div>
+      <div class="swiper-slide">디자인2</div>
+      <div class="swiper-slide">디자인3</div>
+      <div class="swiper-slide">디자인4</div>
+      <div class="swiper-slide">디자인5</div>
+    </div>
+  </div>
+     </section>
+
+
     <!-- 자기 소개 -->
     
-    <section class="section03">
+    <section class="section04">
       <div class="skill">
         <p class="desc">My information</p>
         <div class="section_con">
@@ -139,9 +155,16 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/split-type"></script>
 
   <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+
+
     document.querySelectorAll(".split").forEach(text => {
   let theText = text.innerText;
   let newText = "";
@@ -174,12 +197,12 @@
     const ani2 = gsap.timeline({
       defaults:{autoAlpha:0,}
     });
-    ani2.from(".section03",{
+    ani2.from(".section04",{
       y:-50,
     })
     ScrollTrigger.create({
       animation:ani2,
-      trigger:".section03",
+      trigger:".section04",
       //markers:true, 
       start:"top top", 
       // end:"+=2000",
