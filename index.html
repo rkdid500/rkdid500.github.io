@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>이현아의Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div id="wrap">
@@ -77,11 +77,13 @@
      <section class="section03">
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">디자인1</div>
-      <div class="swiper-slide">디자인2</div>
-      <div class="swiper-slide">디자인3</div>
-      <div class="swiper-slide">디자인4</div>
-      <div class="swiper-slide">디자인5</div>
+      <div class="swiper-slide"><a href="https://www.figma.com/design/O6wSedCsgPImHeEHBaW8XB/UI-UX?node-id=0-1&t=Ddw7Duh9GbPmKnJa-1"><img src="./images/Rectangle 1.png" alt="디자인"></a></div>
+      <div class="swiper-slide"><a href="#">디자인 이미지</a></div>
+      <div class="swiper-slide"><a href="#">디자인 이미지</a></div>
+      <div class="swiper-slide"><a href="#">디자인 이미지</a></div>
+      <div class="swiper-slide"><a href="#">디자인 이미지</a></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </div>
      </section>
@@ -161,10 +163,24 @@
   <script>
     var swiper = new Swiper(".mySwiper", {
       effect: "cards",
-      grabCursor: true,
+      autoplay: {
+    delay: 4000,
+    autoplay:true,
+    loop:true,
+    disableOnInteraction: false,
+  },
+      // grabCursor: true,
+      pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
     });
 
-
+    // gsap.registerPlugin(ScrollTrigger);
     document.querySelectorAll(".split").forEach(text => {
   let theText = text.innerText;
   let newText = "";

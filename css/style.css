@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+:root{--swiper-navigation-size: 30px;}
 *{margin: 0;padding: 0;}
 body{box-sizing: border-box;}
 ul{list-style: none;}
@@ -31,7 +31,7 @@ span{display: inline-block;}
 .section02 .section_content .txt span{font-size: 30px; font-weight: bold; padding: 0 10px;}
 
 
-.section03{width: 100%; height: 100%; position: relative; margin-top: 100px;}
+.section03{width: 100%; min-height: 100vh;; position: relative; margin-top: 300px;}
 .section03 .swiper {
     width: 480px;
     height: 640px;
@@ -41,7 +41,7 @@ span{display: inline-block;}
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 18px;
+    border-radius: 25px;
     font-size: 22px;
     font-weight: bold;
     color: #fff;
@@ -66,6 +66,7 @@ span{display: inline-block;}
   .swiper-slide:nth-child(5n) {
     background-color: rgb(118, 163, 12);
   }
+  .swiper-button-next,.swiper-button-prev{color:#495057;}
 
 
 
