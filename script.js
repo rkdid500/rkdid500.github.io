@@ -37,13 +37,14 @@ gsap.registerPlugin(ScrollTrigger);
     // 디자인 소개 구간간
 
     // console.clear();
+    // gsap.registerPlugin(ScrollTrigger);
 
     // ScrollTrigger.create({
     //     // animation:ani1,
     //     trigger:".section03",
     //     markers:true, 
     //     start:"center center", 
-    //     end:"+=1500",
+    //     end:"+=2000",
     //     pin:true,
     //     // scrub:true,
     //     id:"box1",
